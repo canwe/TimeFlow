@@ -16,7 +16,7 @@ public class DateTimeParser {
 	public DateTimeParser(String pattern, TimeUnit units)
 	{
 		this.pattern=pattern;
-		format=new SimpleDateFormat(pattern);
+		format=new SimpleDateFormat(pattern, Locale.ENGLISH);
 		this.units=units;
 	}
 	
